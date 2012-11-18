@@ -1,0 +1,21 @@
+html {
+    overflow: hidden;
+}
+body {
+    background: #000;
+    color: #fff;
+    font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+    margin:auto;
+    width:640px;
+    height:480px;
+}
+#holder {
+    width: 640px;
+    height: 480px;
+    padding:0;
+    margin:10px;
+}
+footer {
+    margin-top:10px;
+    color:#555;
+}
