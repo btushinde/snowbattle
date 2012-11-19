@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>2D Multiplayer Physics Playground</title>
+    <title>Live Physics Enviornment</title>
     <link rel="stylesheet" href="stylesheets/demo.css">
     <script src="javascripts/raphael.js"></script>
     <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -10,14 +10,22 @@
     <script src="javascripts/main.js"></script>
   </head>
   <body>
+    <div id="smashbar">
+      Smashing<span>Labs</span>
+    </div>
     <header>
-      <h1>2D Multiplayer Physics Playground</h1>
-      <p>Try dragging the boxes. Ask a friend to join you via another computer.</p>
+      <h1>Live Physics Enviornment</h1>
     </header>
     <div id="holder"></div>
-    <div id="stats"></div>
-    <footer>
-      Stefan Hedman, UMIT Research Lab
-    </footer>
+
+    <aside>
+      <h2>Activity Log</h2>
+      <ul class="log"></ul>
+
+
+      <h2>Stats:</h2>
+      <div id="stats"></div>
+    </aside>
+    <footer></footer>
   </body>
 </html>

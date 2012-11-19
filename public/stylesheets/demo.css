@@ -2,20 +2,47 @@ html {
     overflow: hidden;
 }
 body {
-    background: #000;
-    color: #fff;
+    position: relative;
+    padding: 20px;
+    width:1100px;
+    background: #fffbe1;
+    color: #30302b;
     font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
-    margin:auto;
-    width:640px;
-    height:480px;
+    font-family:"Century Gothic",sans-serif;
 }
 #holder {
-    width: 640px;
-    height: 480px;
-    padding:0;
+    float: left;
     margin:10px;
+    padding:0;
+    width: 810px;
+    height: 480px;
+}
+
+aside{
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 200px;
 }
 footer {
+    display: block;
+    float: left;
     margin-top:10px;
+    width: 100%;
     color:#555;
+}
+
+#smashbar{
+    text-transform: uppercase;
+    font-size: 1em;
+    background: #FD0752;
+    color: white;
+    display: inline-block;
+    padding: 5px 40px 5px 12px;
+    opacity: 0.8;
+}
+
+#smashbar span{
+    font-weight: bold;
 }
