@@ -63,9 +63,6 @@ twit.stream('user', {track:'snowbattletest'}, function(stream) {
 
 
 
-
-
-
 //// Box2D world //////////
 var numObjects = 10;
 var worldAABB = new b2.b2AABB();
