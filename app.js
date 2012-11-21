@@ -17,9 +17,11 @@ app.configure(function(){
   app.use(app.router);
 });
 
+
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
+
 
 // When visitors requests http://domain.com:portnumber/, then render views/index.ejs
 app.get('/', function(req, res){
@@ -64,7 +66,7 @@ twit.stream('user', {track:'snowbattletest'}, function(stream) {
 
 
 //// Box2D world //////////
-var numObjects = 10;
+var numObjects = 20;
 var worldAABB = new b2.b2AABB();
 worldAABB.minVertex.Set(-1000, -1000);
 worldAABB.maxVertex.Set(1000, 1000);
@@ -79,13 +81,13 @@ var groundBody = b2world.GetBodyList();
 function generateShape(){
 	var ballSd = new b2.b2BoxDef();
 	ballSd.density = 1.0;
-	ballSd.extents.Set(20,20);
+	ballSd.extents.Set(30,30);
 	ballSd.restitution = 0.6;
 	ballSd.friction = 0.4;
 
 	var ballBd = new b2.b2BodyDef();
 	ballBd.AddShape(ballSd);
-	ballBd.position.Set(Math.random(),Math.random());
+	ballBd.position.Set(Math.random()*4,Math.random()*4);
 	ballBd.allowSleep = true;
 	b2world.CreateBody(ballBd);
 }
